@@ -1,0 +1,49 @@
+<?php
+$title = "Begravningsmuseum online";
+$pageId = "main";
+include("incl/config.php");
+// Define style thats specific for this page
+$pageStyle = '
+figure { 
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
+ border-color:#5C0A0A;
+ box-shadow: 5px 5px 5px #8A0F0F;
+}
+';
+
+
+?>
+
+<?php include("incl/header.php"); ?>
+
+
+	<!-- Main -->
+<div id="content">
+<article class="justify border" style="width:100%">
+    
+    
+    <figure class="right top">
+    	<img src="bilder/mc.jpg" width=210 height=140>
+    	<figcaption>
+    		<p>Bild på Mattias Svedklint</p>
+    	</figcaption>
+    </figure>
+  
+    <p>
+    
+    
+    
+    
+    </p>
+      
+
+    <hr>
+    </article>    
+     </div>     
+    
+
+     
+<?php include("incl/footer.php"); ?>
+
+

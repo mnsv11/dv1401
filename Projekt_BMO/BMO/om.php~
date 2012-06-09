@@ -1,0 +1,45 @@
+<?php
+include("incl/config.php");
+
+
+
+ include("incl/header.php"); ?>
+<?php
+$dbPath = dirname(__FILE__) . "/sql/bmo.sqlite";
+//
+// Connect to the database
+//
+$db = new PDO("sqlite:$dbPath");
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING); // Display errors, but continue script
+
+//
+// Read from database
+//
+$stmt = $db->prepare('SELECT * FROM About;');
+$stmt->execute();
+$res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+?>
+
+<h2>Om begravningsmuseum online</h2>
+  <fieldset>
+
+
+
+
+  
+  <?php foreach($res as $ad): ?>
+  
+  <tr>
+   <p id="omsidan">
+    <?php echo $ad['Text']; ?>
+    </p>
+  </tr>
+  
+  <?php endforeach; ?>
+
+
+  </fieldset>
+  <?php include("incl/byline.php"); ?>
+<?php include("incl/footer.php"); ?>

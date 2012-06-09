@@ -1,0 +1,67 @@
+<?php
+include("incl/config.php");
+$pageId = "artiklar";
+// Define style thats specific for this page
+$pageStyle = '
+figure { 
+ border-bottom-right-radius: 5px;
+ border-bottom-left-radius: 5px;
+ border-color:#5C0A0A;
+ margin-left: 20px;
+ text-align:center;
+}
+';
+
+
+
+$p = null;
+if(isset($_GET["p"]))
+{
+	$p = $_GET["p"];
+}
+
+$path = "incl/artiklar";
+$file = null;
+switch($p) 
+{
+  case "begravningskonfekt":
+    $title   = "begravningskonfekt";
+    $file        = "begravningskonfekt.php";
+    break;
+    case "minnestavlor":
+    $title   = "minnestavlor";
+    $file        = "minnestavlor.php";
+    break;
+    case "parlkransar":
+    $title   = "parlkransar";
+    $file        = "parlkransar.php";
+    break;
+    case "begravningsfest":
+    $title   = "begravningsfest";
+    $file        = "begravningsfest.php";
+    break;
+    case "begravningsseder":
+    $title   = "begravningsseder";
+    $file        = "begravningsseder.php";
+    break;
+    default:
+    $title   = "Välj style för webbplatsen.";
+    $file        = "default.php";
+}
+
+
+?>
+
+<?php include("incl/header.php"); ?>
+<div id="content">
+ <aside class="left" style="width:22%;">
+    <?php include("$path/aside.php"); ?>
+  </aside>
+   <article class="right border justify-para" style="width:73%;">
+    <?php include("$path/$file"); ?>
+
+    <hr>
+  </article>
+  
+</div>
+<?php include("incl/footer.php"); ?>

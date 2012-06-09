@@ -1,0 +1,14 @@
+/* Tables 
+-------------------------------------------------------------- */
+
+table {margin-bottom:1.4em;}
+th {font-weight:bold;background:#656565;color:white;}
+th,td,caption {padding:4px 10px 4px 5px;width:400px}
+
+tbody tr:nth-child(even){float:left;} td {background:#F0FE80;font-size:13px;}
+tbody tr:nth-child(odd){float:left;} td {background:#F0FE80;height:300px;}
+tbody tr:hover td {background:#A3F97B;}
+td img {float:right;padding-left:5px;padding-bottom: 5px;}
+tfoot {font-style:italic;}
+caption {text-align:left;background:#F6F6F6;}
+p#omsidan {width:100%;}

@@ -1,0 +1,13 @@
+/* Tables 
+-------------------------------------------------------------- */
+
+table {margin-bottom:1.4em;}
+th {font-weight:bold;background:#656565;color:white;}
+th,td,caption {padding:4px 10px 4px 5px;}
+
+tbody tr:nth-child(even) td {background:#F0FE80;}
+tbody tr:nth-child(odd) td {background:#B8B8B8;}
+tbody tr:hover td {background:#A3F97B;}
+
+tfoot {font-style:italic;}
+caption {text-align:left;background:#F6F6F6;}

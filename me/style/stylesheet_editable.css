@@ -1,0 +1,9 @@
+@import url("stylesheet.css"); /*importera allt i denna fil*/
+
+html {background: green;}
+#wrap {background: lightgreen;}
+nav.navmenu {background: blue;}		   
+
+
+
+

@@ -1,0 +1,149 @@
+@import url(formstyle.css);
+@import url(table.css);
+
+html {background: #54aabb;}
+html{ overflow-y: scroll;}
+
+
+div.wrap {
+	margin: 8px auto;
+	margin-bottom: 30px;
+	width: 934px;
+	padding: 8px;
+	background: #ffffff;
+	border: 3px outset #000000;
+	font-family: Georgia, serif;
+	color : #000000;
+	/*Rundade hörn*/
+	border-radius: 30px;
+	/*skugga runt ramen*/
+	box-shadow: 15px 15px 5px #555;
+
+}
+
+h1 {
+	text-transform: uppercase;
+	border-bottom: 4px double #54aabb;
+}
+
+
+/*header above*/
+header#above {font-family:arial,helvetica,sans-serif;border-bottom:1px solid #E6E6E6;margin-bottom:4px;color:#000;width:934px;margin:auto;}
+
+
+
+
+/*
+Huvud
+*/
+div#top {}
+
+
+/* 
+Meny
+*/
+nav.navmenu {
+    display: block;
+    padding: 0.2em 1em 0 1em;
+    background: #54aabb;
+    border-bottom: 2px solid #9966ff;
+    
+ 
+}
+nav.navmenu a {padding: 0.3em 1em 0 1em;color: #000000;
+	       font-family: Tahoma, Geneva, sans-serif;
+	       text-decoration:none;}
+	       
+nav.navmenu a:link    { }
+nav.navmenu a:visited { }
+nav.navmenu a:hover   { color: #111111; background-color: #999999; }
+nav.navmenu a:active  { }
+
+nav.related,
+nav.login {padding: 0.2em 1em 0.3em 1em;font-size:smaller;color:#666;}
+nav.login {float:right;}
+
+ul#menu {padding:0px;}
+
+
+hr{clear:both; margin-bottom: 10px}
+
+
+/*Byline*/
+footer.byline {
+  display:block;
+  clear: both;
+  border-top: 1px dashed;
+  margin-top:5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  color: #555555;
+  font-size: smaller;
+  font-style:italic;
+
+}
+
+footer.byline img {padding:0px; float:right; margin-right: 0px;  
+}   
+
+div#time {clear: both}
+div#time{text-align: right;width:40%;float:right;padding:2px;
+font: italic 0.8em Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	color: #999999;}
+
+/*footer*/
+div#footer {
+clear: both;
+text-align: left;}
+
+div#footer a {
+	font: italic 0.8em Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	color: #999999;
+}
+
+div#footer a:link	{ }
+div#footer a:visited 	{ }
+div#footer a:hover	{ text-decoration:underline;	color: #333333; }
+div#footer a:active	{ }
+
+.right {float:right;}
+.left {float:left;}
+
+
+/* 
+Fokus på menyn
+*/
+body#me a#me-,
+body#report a#report-,
+body#test a#test-,
+body#style a#style-,
+body#annons a#annons-,
+body#annonssql a#annonssql-,
+body#source a#source- {background:#54aabb;border:5px solid #54aabb;}
+
+
+
+blockquote.code {font-family:monospace; white-space:pre; background:#F2F2F2;
+margin-left:0px ;margin-right:10px; padding-left:0.5em;
+border:1px solid #999; overflow:auto;}
+
+
+ul.aside{padding:2px;}
+div.aside {
+	margin: 30px auto;
+	margin-bottom: 10px;
+	width: 80%;
+	padding: 20px;
+	background: #ffffff;
+	border: 3px outset #54aabb;
+	font-family: Georgia, serif;
+	color :black;
+	/*Rundade hörn*/
+	border-radius: 10px;
+	/*skugga runt ramen*/
+	box-shadow: 5px 5px 5px #555;
+}
+      
+

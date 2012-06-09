@@ -1,0 +1,12 @@
+<nav class="vmenu">
+
+  <ul <?php if(isset($p)) echo "id='".strip_tags($p)."'"; ?>>
+    <li><h4>Kmom03</h4>
+      <ul>
+        <li id="get"><a href="?p=kmom03-get">Visa <code>$_GET</code></a>
+        <li id="getform"><a href="?p=kmom03-getform">Form med get</a>
+      </ul>
+  </ul>
+  
+</nav>
+
