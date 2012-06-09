@@ -11,7 +11,6 @@ figure {
 }
 ';
 
-
 $pageId = "annons";
 
 $p = null;
